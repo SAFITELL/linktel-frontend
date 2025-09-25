@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import defaultSEOConfig from "../../next-seo.config";
+import { DefaultSeo } from "next-seo";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -28,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${nunito.variable} antialiased`}
       >
+        <DefaultSeo {...defaultSEOConfig} />
         {children}
       </body>
     </html>
