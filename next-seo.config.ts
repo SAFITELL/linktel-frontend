@@ -1,5 +1,5 @@
 const defaultSEOConfig = {
-  title: "Linktel | ",
+  title: "Linktel | Official Website",
   description:
      "Bridging the connectivity divide using innovation and scalable technology.",
   canonical: "https://linktel-globalplatform.vercel.app/",
