@@ -142,7 +142,14 @@ export default function Page() {
       <main className="relative z-10 flex-grow flex flex-col md:flex-row items-start justify-between w-full max-w-7xl px-8 py-16">
         <div className="text-left max-w-xl space-y-6 md:ml-12">
           <motion.p className="text-gold font-semibold" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>20M+ Users</motion.p>
-          <motion.h1 className="text-6xl font-bold text-white" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>LinkTel: Africa's Unified Communications Platform</motion.h1>
+          <motion.h1
+          className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          LinkTel: Africa's Unified Communications Platform
+        </motion.h1>
           <motion.p className="text-gray-200 text-lg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }}>
             Seamlessly connect across Africa with a single API for SMS, Voice, USSD, Airtime and Data. Deliver reliable messaging, programmable voice and interactive USSD menus, all while ensuring data sovereignty and compliance.
           </motion.p>
