@@ -103,7 +103,7 @@ export default function Page() {
       
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 text-white font-semibold">
-            {["Home", "Pricing", "Developers"].map((item) => (
+            {["Home", "Pricing"].map((item) => (
               <Link key={item} href={`/${item.toLowerCase()}`} className="hover:text-[#35B5AC]">{item}</Link>
             ))}
             <Link href="#solutions" className="hover:text-[#35B5AC]">Solutions</Link>
@@ -125,7 +125,7 @@ export default function Page() {
       {/* Mobile Nav */}
       {menuOpen && (
         <div className="md:hidden bg-black text-white fixed top-0 left-0 w-full z-40 px-6 py-20 font-bold space-y-6 text-center">
-          {["Home", "Solutions", "Pricing", "Developers"].map((item) => (
+          {["Home", "Solutions", "Pricing"].map((item) => (
             <Link key={item} href={`/${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
               <span className="block text-lg cursor-pointer">{item}</span>
             </Link>
