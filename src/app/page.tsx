@@ -103,11 +103,13 @@ export default function Page() {
       
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 text-white font-semibold">
-            {["Home", "Solutions", "Pricing", "Developers"].map((item) => (
+            {["Home", "Pricing", "Developers"].map((item) => (
               <Link key={item} href={`/${item.toLowerCase()}`} className="hover:text-[#35B5AC]">{item}</Link>
             ))}
+            <Link href="#solutions" className="hover:text-[#35B5AC]">Solutions</Link>
+            <Link href="#why-linktel" className="hover:text-[#35B5AC]">Why Linktel</Link>
             <Link href="/login" className="px-4 py-2 rounded-md text-gray-800 bg-white hover:bg-gray-100">Log in</Link>
-            <Link href="/signup" className="px-4 py-2 rounded-md bg-[#35B5AC] text-white font-bold hover:bg-[#2ca198]">Get it Now — It’s Free</Link>
+            <Link href="/signup" className="px-4 py-2 rounded-md bg-[#35B5AC] text-white font-bold hover:bg-[#2ca198]">Sign Up Now</Link>
           </div>
 
           {/* Mobile toggle */}
@@ -128,8 +130,10 @@ export default function Page() {
               <span className="block text-lg cursor-pointer">{item}</span>
             </Link>
           ))}
+          <Link href="/login" className="block px-4 py-2 rounded-md">Solutions</Link>
+          <Link href="/login" className="block px-4 py-2 rounded-md">Why Linktel</Link>
           <Link href="/login" className="block px-4 py-2 rounded-md">Log in</Link>
-          <Link href="/signup" className="block bg-[#35B5AC] px-4 py-2 rounded-md text-white">Get it Now — It’s Free</Link>
+          <Link href="/signup" className="block bg-[#35B5AC] px-4 py-2 rounded-md text-white">Sign Up Now</Link>
           <button
             onClick={() => window.location.reload()}
             className="block bg-red-600 px-4 py-2 rounded-md text-white w-full mt-4"
@@ -141,7 +145,7 @@ export default function Page() {
 
       <main className="relative z-10 flex-grow flex flex-col md:flex-row items-start justify-between w-full max-w-7xl px-8 py-16">
         <div className="text-left max-w-xl space-y-6 md:ml-12">
-          <motion.p className="text-gold font-semibold" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>20M+ Users</motion.p>
+          <motion.p className="text-yellow-400 font-semibold" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>20M+ Users</motion.p>
           <motion.h1
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight"
           initial={{ opacity: 0, y: -20 }}
@@ -175,7 +179,7 @@ export default function Page() {
               <Image src="/shoe.jpeg" alt="Shoe" width={70} height={70} className="rounded-md" />
               <div>
                 <p className="text-sm font-semibold text-gray-800">Netlink Speeds</p>
-                <p className="text-gray-600 font-bold">83%</p>
+                <p className="text-blue-600 font-bold">83% uptime</p>
               </div>
             </motion.div>
 
@@ -191,8 +195,8 @@ export default function Page() {
       {/* SOLUTIONS SECTION */}
       <section id="solutions" className="relative z-10 w-full max-w-7xl mx-auto px-8 py-24 md:py-32">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Our Solutions</h2>
-          <p className="text-gray-600 mt-4 text-lg md:text-xl max-w-2xl mx-auto">A unified platform to connect, communicate, and scale across Africa. Single API, multiple channels, total control.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-yellow-400">Our Solutions</h2>
+          <p className="text-gray-200 mt-4 text-lg md:text-xl max-w-2xl mx-auto">A unified platform to connect, communicate, and scale across Africa. Single API, multiple channels, total control.</p>
         </div>
 
         <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}>
@@ -206,10 +210,10 @@ export default function Page() {
       </section>
 
       {/* WHY LINKTEL */}
-      <section id="why-linktel" className="relative z-10 w-full max-w-7xl mx-auto px-8 py-24 md:py-32 bg-gray-50">
+      <section id="why-linktel" className="relative z-10 w-full max-w-7xl mx-auto px-8 py-24 md:py-32 bg-gray-400">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Why LinkTel?</h2>
-          <p className="text-gray-600 mt-4 text-lg md:text-xl max-w-2xl mx-auto">LinkTel empowers African developers and businesses with a reliable, scalable, and compliant communications platform — all through a single unified API.</p>
+          <p className="text-gray-900 mt-4 text-lg md:text-xl max-w-2xl mx-auto">LinkTel empowers African developers and businesses with a reliable, scalable, and compliant communications platform — all through a single unified API.</p>
         </div>
 
         <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}>
