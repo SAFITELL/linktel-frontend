@@ -201,7 +201,7 @@ export default function Page() {
 
         <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}>
           {solutions.map((card, i) => (
-            <motion.div key={i} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start space-y-4 hover:shadow-xl transition-shadow duration-300 hover:scale-105" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+            <motion.div key={i} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start space-y-4 hover:shadow-xl transition-shadow duration-300 hover:scale-105" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 15, ease: "easeInOut" }}>
               <h3 className="text-xl font-semibold text-gray-900">{card.title}</h3>
               <p className="text-gray-600 text-sm">{card.desc}</p>
             </motion.div>
