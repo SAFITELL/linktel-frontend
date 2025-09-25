@@ -36,7 +36,8 @@ export default function Page() {
 
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
-      <DefaultSeo {...defaultSEOConfig} />
+      {typeof window !== "undefined" && <DefaultSeo {...defaultSEOConfig} />}
+
       {/* Background slideshow */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <AnimatePresence>
