@@ -162,20 +162,20 @@ export default function Page() {
             <Image src="/item.jpg" alt="Person" fill className="object-cover" />
 
             {/* Floating tags */}
-            <motion.div className="absolute top-6 left-6 bg-white px-4 py-2 rounded-full shadow-md text-sm font-medium text-gray-800" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}>How is the fit?</motion.div>
+            <motion.div className="absolute top-6 left-6 bg-white px-4 py-2 rounded-full shadow-md text-sm font-medium text-gray-800" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}>How is the link?</motion.div>
             <motion.div className="absolute top-16 left-6 bg-white px-4 py-2 rounded-full shadow-md text-sm font-medium text-gray-800" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.3 }}>Do you like the design?</motion.div>
             <motion.div className="absolute bottom-6 right-6 bg-white p-3 rounded-xl shadow-md flex items-center space-x-3" animate={{ y: [0, -5, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.6 }}>
               <Image src="/shoe.jpeg" alt="Shoe" width={70} height={70} className="rounded-md" />
               <div>
-                <p className="text-sm font-semibold text-gray-800">Nike Shoes Jordan</p>
-                <p className="text-gray-600 font-bold">$849.99</p>
+                <p className="text-sm font-semibold text-gray-800">Netlink Speeds</p>
+                <p className="text-gray-600 font-bold">83%</p>
               </div>
             </motion.div>
 
             <div className="absolute top-6 right-6 bg-white px-4 py-3 rounded-xl shadow-md text-right">
               <p className="text-xs uppercase text-gray-500">Up to</p>
               <p className="text-2xl font-bold text-gray-900">60%</p>
-              <p className="text-xs text-gray-500">More sales this week</p>
+              <p className="text-xs text-gray-500">More speeds</p>
             </div>
           </div>
         </div>
