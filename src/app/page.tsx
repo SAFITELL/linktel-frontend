@@ -130,8 +130,8 @@ export default function Page() {
               <span className="block text-lg cursor-pointer">{item}</span>
             </Link>
           ))}
-          <Link href="/login" className="block px-4 py-2 rounded-md">Solutions</Link>
-          <Link href="/login" className="block px-4 py-2 rounded-md">Why Linktel</Link>
+          <Link href="#solutions" className="block px-4 py-2 rounded-md">Solutions</Link>
+          <Link href="#why-linktel" className="block px-4 py-2 rounded-md">Why Linktel</Link>
           <Link href="/login" className="block px-4 py-2 rounded-md">Log in</Link>
           <Link href="/signup" className="block bg-[#35B5AC] px-4 py-2 rounded-md text-white">Sign Up Now</Link>
           <button
