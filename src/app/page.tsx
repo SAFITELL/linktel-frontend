@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { DefaultSeo } from "next-seo";
+import defaultSEOConfig from "../../next-seo.config";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaGlobe, FaDollarSign, FaTools, FaLock } from "react-icons/fa";
 
@@ -34,6 +36,7 @@ export default function Page() {
 
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
+      <DefaultSeo {...defaultSEOConfig} />
       {/* Background slideshow */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <AnimatePresence>
