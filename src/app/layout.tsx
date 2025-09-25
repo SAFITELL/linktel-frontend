@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { IBM_Plex_Sans } from "next/font/google";
+import { Nunito } from "next/font/google";
 
-
-
-const ibmPlexSans = IBM_Plex_Sans({
-  variable: "--font-ibm-plex-sans",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // optional, adjust as needed
+  weight: ["400", "500", "600", "700"], // Nunito supports these weights
 });
 
 
@@ -28,7 +26,7 @@ export default function RootLayout({
         <title>LinkTel</title>
       </head>
       <body
-        className={`${ibmPlexSans.variable} antialiased`}
+        className={`${nunito.variable} antialiased`}
       >
         {children}
       </body>
